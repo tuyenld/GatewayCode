@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
 		}
 		// convert the IP to a string and print it:
 		inet_ntop(p->ai_family, addr, ipstr, sizeof ipstr);
-		printf(" %s: %s\n", ipver, ipstr);
+		printf(" Cannioname [%s] %s: %s\n",p->ai_canonname, ipver, ipstr);
 	}
 
 	freeaddrinfo(res); // free the linked list
